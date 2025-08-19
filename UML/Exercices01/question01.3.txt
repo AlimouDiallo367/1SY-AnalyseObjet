@@ -1,0 +1,2 @@
+Non, James n'est plus considéré comme un nouvel acteur. 
+Pour modéliser cela, on ajoute une action : Remplir réservoirs

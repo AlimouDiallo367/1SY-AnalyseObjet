@@ -1,0 +1,1 @@
+Oui, on doit définir un nouvel qui est le pompiste, et on modélise cela en UML par la généralisation (Héritage)

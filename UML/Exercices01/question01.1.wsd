@@ -1,0 +1,14 @@
+@startuml 
+left to right direction
+
+actor Client 
+
+rectangle "Station-service" {
+    usecase "Prendre le pistolet" as UC0
+    usecase "Appuyer sur la gachette" as UC1
+}
+
+Client --> UC0
+Client --> UC1
+
+@enduml

@@ -1,0 +1,20 @@
+@startuml 
+left to right direction
+
+actor Client 
+actor Pompiste
+actor Pompiste_qualifie
+
+rectangle "Station-service" {
+    usecase "Se servir de l'essence" as UC0
+    usecase "Remplir les réservoirs" as UC1
+    usecase "Faire la maintenance" as UC2
+}
+
+Client --> UC0
+Client --> UC1
+Pompiste <|-- Pompiste_qualifie
+Pompiste --> UC2
+Pompiste_qualifie --> UC2
+UC2 --> UC1 : <<extends>>
+@enduml

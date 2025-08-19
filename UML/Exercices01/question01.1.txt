@@ -1,0 +1,1 @@
+L'acteur du système est le client, parce que c'est lui qui interragit avec le système. 
