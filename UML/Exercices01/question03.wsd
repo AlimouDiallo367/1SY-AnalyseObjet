@@ -1,0 +1,17 @@
+@startuml 
+left to right direction
+
+actor Client
+actor Caissier
+actor Caisse
+actor Responsable
+
+rectangle "Alkatrak" {
+    usecase "Enregistrer une action" as UC0
+    usecase "Afficher le prix et le libellé article" as UC1
+    usecase "Signaler la fin de la vente" as UC2
+    usecase "Afficher le total des achats" as UC3
+    usecase "Choisir le mode de paiement" as UC4
+    usecase "Encaisser l'argent" as UC5
+    usecase "Payer par liquide" as UC5
+}
