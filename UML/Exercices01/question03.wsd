@@ -13,5 +13,26 @@ rectangle "Alkatrak" {
     usecase "Afficher le total des achats" as UC3
     usecase "Choisir le mode de paiement" as UC4
     usecase "Encaisser l'argent" as UC5
-    usecase "Payer par liquide" as UC5
+    usecase "Payer par liquide" as UC6
+    usecase "Payer par chèque" as UC7
+    usecase "Payer par crédit" as UC8
+    usecase "Valider la transaction" as UC9
+    usecase "Transmettre le ticket" as UC10
+    usecase "Présenter coupon" as UC11
+    usecase "Initialiser les caisses" as UC12
 }
+
+
+
+Caissier --> UC0
+Caisse --> UC1
+Caissier --> UC2
+Caisse --> UC3
+Client --> UC4
+UC4 <|-- UC6
+UC4 <|-- UC7
+UC4 <|-- UC8
+Caisse --> UC9
+Caissier --> UC10
+Caisse --> UC11
+Responsable --> UC12
