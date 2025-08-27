@@ -1,0 +1,25 @@
+@startuml
+
+left to right direction
+
+object Noeud
+object Fichier
+object Repertoire
+
+
+Noeud <|-- Fichier
+Noeud <|-- Repertoire
+' Repertoire *-- Repertoire
+' Repertoire *-- Fichier
+Repertoire *-- Noeud
+
+'  Repertoire : nom
+' Repertoire : contenu
+Fichier : contenu
+' Fichier : contenu
+
+' Noeud : nom
+Noeud : nom
+
+
+@enduml

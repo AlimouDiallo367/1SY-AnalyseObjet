@@ -1,6 +1,11 @@
 @startuml
 left to right direction
 
+object Livre
+object Recette 
+object Ingredient
 
+Livre o-- "50..75" Recette 
+Recette o-- "1..*" Ingredient
 
 @enduml

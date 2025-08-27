@@ -1,0 +1,31 @@
+@startuml
+left to right direction
+' Membre
+' Conversation 
+' Message
+' Amitie 
+
+object Membre 
+object Amitie
+object Conversation
+object ConversationPrivee
+object ConversationGroupe
+object Message
+
+Message : nom 
+Message : alias 
+
+Amitie : dateDebut
+
+ConversationGroupe : nom
+
+Message : contenu 
+Message : dateEnvoi
+
+Membre "1" -- "1..5000" Membre : ami >
+Amitie -- Membre
+Conversation <|-- ConversationPrivee
+Conversation <|-- ConversationGroupe
+Conversation "1" -- "0..*" Message
+Membre "1" -- "0..*" Message : envoie >
+@enduml
