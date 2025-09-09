@@ -1,0 +1,27 @@
+@startuml 
+left to right direction 
+
+object CompagnieAerienne 
+object Vol  
+object Aeroport 
+object Ville 
+object Escale  
+
+CompagnieAerienne : nom 
+
+Vol : dateHeureDepart
+Vol : dateHeureArrivee
+
+Aeroport : nom 
+Aeroport : noIdentification 
+
+Ville : nom 
+
+Escale : dateHeureDepart
+Escale : dateHeureArrivee 
+
+CompagnieAerienne *-- Vol
+Ville "1" -- "0..*" Escale : se fait <
+Aeroport "0..*" -- "1" Ville
+Escale "0..*" -- "1" Vol 
+@enduml 
