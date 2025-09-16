@@ -1,0 +1,19 @@
+@startuml question02
+left to right direction 
+
+State Ouvert 
+
+state Verrouillé {
+  state SimpleTour {
+  }
+  state DoubleTour {
+  }
+}
+
+Ouvert --> SimpleTour : verrouiller 
+Ouvert <-- SimpleTour : déverrouiller 
+
+SimpleTour --> DoubleTour : verrouiller [demi-tour à droite] 
+SimpleTour <-- DoubleTour : déverrouiller [demi-tour à gauche]
+
+@enduml

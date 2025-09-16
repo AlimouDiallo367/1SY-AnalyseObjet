@@ -1,0 +1,16 @@
+@startuml 
+left to right direction
+
+actor Client 
+
+rectangle "Amazon CShawi" {
+    usecase "Passer commande" as UC0
+    usecase "Payer la commande" as UC1
+    usecase "Consulter commande" as UC2
+}
+
+Client --> UC0
+Client --> UC2
+UC0 --> UC3 : <<include>> 
+
+@enduml

@@ -23,5 +23,7 @@ Escale : dateHeureArrivee
 CompagnieAerienne *-- Vol
 Ville "1" -- "0..*" Escale : se fait <
 Aeroport "0..*" -- "1" Ville
+Aeroport [Decollage] -- Vol
+Aeroport [Atterissage] -- Vol
 Escale "0..*" -- "1" Vol 
 @enduml 

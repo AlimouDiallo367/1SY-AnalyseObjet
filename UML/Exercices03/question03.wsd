@@ -7,25 +7,15 @@ left to right direction
 
 object Membre 
 object Amitie
-object Conversation
-object ConversationPrivee
-object ConversationGroupe
-object Message
+object Groupe
 
-Message : nom 
-Message : alias 
 
 Amitie : dateDebut
+Membre : Nom
 
-ConversationGroupe : nom
 
-Message : contenu 
-Message : dateEnvoi
+' Membre "1" --  Membre : ami >
+(Membre,Membre) "1" -- "1..5000" Amitie 
+Membre "3..*" --  Groupe
 
-Membre "1" -- "1..5000" Membre : ami >
-Amitie -- Membre
-Conversation <|-- ConversationPrivee
-Conversation <|-- ConversationGroupe
-Conversation "1" -- "0..*" Message
-Membre "1" -- "0..*" Message : envoie >
 @enduml

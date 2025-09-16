@@ -11,7 +11,7 @@ Bail : date
 Bail : renouveller()
 
 ' (Bail, Personne) o-- Appartement
-Personne "1" -- "0..*" Appartement : loue >
+Personne "1" -- "1..*" Appartement : loue 
 (Personne, Appartement) -- Bail
 
 @enduml
