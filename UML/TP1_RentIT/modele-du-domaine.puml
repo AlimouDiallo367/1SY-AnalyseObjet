@@ -1,12 +1,11 @@
 @startuml RentIT
+left to right direction 
 object Membre {
     id
     nom 
     prenom 
     dateNaissance 
     coordonnees
-    numeroCarteCredit
-    creditDisponible
 }
 
 object Vehicule {
@@ -39,20 +38,8 @@ object Employe {
     role 
 }
 
-object Prepose {
-    succursale 
-}
-
-object Gerant {
-
-}
-
-Employe <|-- Prepose  
-Employe <|-- Gerant   
-
 Membre "1" -- "0..*" Reservation : effectue
-Reservation "1" -- "1" Succursale : concerne 
-Prepose "1" -- "0..*" Reservation : prépare
-Gerant "1" -- "0..*" Vehicule : gère
-
+Reservation "1" -- "1" Vehicule : concerne
+Reservation "1" -- "1" Succursale : a lieu >
+Employe "1" -- "0..*" Reservation : gere >
 @enduml 

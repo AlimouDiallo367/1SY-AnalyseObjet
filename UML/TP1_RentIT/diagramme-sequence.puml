@@ -1,40 +1,24 @@
-@startuml RentIT_Prise_Retour 
-actor Client
+@startuml UC01_PreparerVehicule
 actor Prepose
+participant Systeme
 
-participant Systeme 
-participant InstitutionFinanciere
-participant SAC  
+Prepose -> Systeme : Ouvre la réservation du client
+Systeme -> Prepose : Affiche infos réservation 
+Prepose -> Prepose : Inspecte le véhicule (km, essence, état)
+Prepose -> Prepose : Prend des photos de l’état initial
+Prepose -> Systeme : Enregistre les informations d’inspection
+Systeme -> Prepose : Confirme que le véhicule est prêt pour la remise
 
+alt Véhicule non disponible ou problème
+    Prepose -> Systeme : Signale problème
+    Systeme -> Prepose : Rétroaction et instructions
+end
 
-== Prise du véhicule == 
-Client -> Prepose : Se présenter au comptoir
-Prepose -> Systeme : Identifier la réservation du client  
-Prepose -> Systeme : Enregistrer les infos du véhicule  
-
-Prepose -> Client : Demander paiement 
-Client -> Prepose : Choisit mode de paiement
-
-alt Paiement en espèces
-  Prepose -> Client : Enregistrer paiement   
-else Paiement par débit 
-  Prepose -> InstitutionFinanciere : Demande autorisation
-  InstitutionFinanciere -> Prepose : Autorisation acceptée / refusée 
-  Prepose -> Client : Enregistrer paiement 
-else Paiement par carte de crédit 
-  Prepose -> SAC : Demande autorisation
-  SAC -> Prepose : Autorisation acceptée / refusée 
-  Prepose -> Client : Enregistrer paiement 
-end 
-Prepose -> Client : Remettre véhicule 
-
-== Retour du véhicule == 
-Client -> Prepose : Retourner véhicule 
-Prepose -> Systeme : Enregistrer infos retour 
-
-alt Frais supplémentaires 
-  Prepose -> Client : Réclamer frais 
-  Prepose -> Systeme : Enregistrer paiement additionnel
-end 
-
+alt Erreur lors de l'enregistrement
+    Prepose -> Systeme : Envoie infos incorrectes
+    Systeme -> Prepose : Rétroaction d’incohérence
+    Prepose -> Systeme : Corrige les informations
+end
 @enduml
+
+
