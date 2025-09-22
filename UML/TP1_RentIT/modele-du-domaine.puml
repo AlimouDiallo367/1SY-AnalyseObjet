@@ -1,0 +1,58 @@
+@startuml RentIT
+object Membre {
+    id
+    nom 
+    prenom 
+    dateNaissance 
+    coordonnees
+    numeroCarteCredit
+    creditDisponible
+}
+
+object Vehicule {
+    immatriculation 
+    marque 
+    modele 
+    kilometrage 
+    niveauEssence 
+    etat
+    disponibilite 
+}
+
+object Reservation {
+    id
+    dateDebut
+    dateFin 
+    statut 
+    frais 
+}
+
+object Succursale {
+    id
+    nom
+    adresse 
+}
+
+object Employe {
+    id
+    nom
+    role 
+}
+
+object Prepose {
+    succursale 
+}
+
+object Gerant {
+
+}
+
+Employe <|-- Prepose  
+Employe <|-- Gerant   
+
+Membre "1" -- "0..*" Reservation : effectue
+Reservation "1" -- "1" Succursale : concerne 
+Prepose "1" -- "0..*" Reservation : prépare
+Gerant "1" -- "0..*" Vehicule : gère
+
+@enduml 
