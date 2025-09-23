@@ -1,0 +1,10 @@
+@startuml etats_tp01
+[*] --> Disponible
+
+Disponible --> Réservée : Réservation confirmée
+Réservée --> EnLocation : Client prend possession
+EnLocation --> InspectionRetour : Retour du véhicule
+InspectionRetour --> Disponible : Véhicule conforme
+InspectionRetour --> Maintenance : Dommages ou entretien requis
+Maintenance --> Disponible : Entretien terminé
+@enduml

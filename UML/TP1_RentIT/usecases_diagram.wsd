@@ -1,0 +1,48 @@
+@startuml
+left to right direction
+actor "Client" as Client
+actor "Membre" as Membre
+actor "Preposé" as Preposé
+actor "Gérant" as Gérant
+actor "SAC (Système d'autorisation de crédit)" as SAC
+actor "Institution financière" as Banque 
+
+rectangle "RentIT" {
+  usecase "consulter le site web" as UC0
+  usecase "s'enregistrer" as UC1
+  usecase "fournir ses identifiants" as UC2
+  usecase "founir numero carte de credit" as UC3
+  usecase "effectuer une reservation " as UC4
+  usecase "effectuer un paiement" as UC5
+  usecase "inspecter le vehicule" as UC6
+  usecase "reclamer les frais supplémentaire" as UC7
+  usecase "gérer liste des voitures" as UC8
+  usecase "s'authentifier" as UC9
+  }
+
+Client --> UC0
+Client --> UC1
+Membre --> UC4
+Membre --> UC5
+Preposé --> UC6
+Gérant --> UC8
+
+UC1 --> UC2 : <<include>>
+UC1 --> UC3 : <<include>>
+
+UC4 --> UC9 : <<include>>
+UC5 --> UC9 : <<include>>
+UC6 --> UC9 : <<include>>
+UC4 <-- UC7 : <<extend>>
+UC8 --> UC9 : <<include>>
+
+UC3 --> SAC
+UC5 --> SAC
+UC5 --> Banque
+
+Gérant --|> Preposé
+
+Membre --|> Client    
+@enduml
+
+' la géneralisation du preposé au Membre est optionnelle. A voir avec les amis.
