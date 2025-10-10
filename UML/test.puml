@@ -1,0 +1,15 @@
+@startuml
+state Solide
+state Liquide
+state Gaz
+
+Solide --> Liquide : Fusion\n(> 0°C)
+Liquide --> Solide : Solidification\n(< 0°C)
+
+Liquide --> Gaz : Vaporisation\n(> 100°C)
+Gaz --> Liquide : Condensation\n(< 100°C)
+
+Solide --> Gaz : Sublimation
+Gaz --> Solide : Condensation solide
+
+@enduml

@@ -1,5 +1,16 @@
-@startuml 
+@startuml CanadianTire 
 left to right direction 
+
+object Magasin
+object Article {
+    code 
+    nom 
+    rabais
+}
+object Caisse 
+object Client 
+object Inventaire 
+object Circulaire
 
 
 @enduml 
