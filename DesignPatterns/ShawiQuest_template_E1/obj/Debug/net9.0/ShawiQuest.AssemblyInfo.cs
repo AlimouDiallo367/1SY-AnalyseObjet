@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShawiQuest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+da91e8b009c30a23edb145d5088d9810c0983c61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+91c1baf1d64daca07233b8f2e5a6dd502151bb6b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShawiQuest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShawiQuest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
