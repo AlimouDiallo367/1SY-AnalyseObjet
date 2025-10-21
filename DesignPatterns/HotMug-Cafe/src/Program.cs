@@ -1,27 +1,10 @@
-﻿
-static void RunLoop()
-{
-    Console.WriteLine("\nPress 'd' to take damage, 'h' to heal, or 'q' to quit:");
-    while (true)
-    {
-        char input = Console.ReadKey(true).KeyChar;
+﻿  Beverage beverage = new Regular();
+  Console.WriteLine(beverage);
 
-        if (input == 'd')
-        {
-            //player.TakesDamage();
-        }
-        else if (input == 'h')
-        {
-            //player.Heal();
-        }
-        else if (input == 'q')
-        {
-            break;
-        }
-        Console.WriteLine();
-    }
+  beverage = new Expresso();
+  Console.WriteLine(beverage);
 
-    Console.WriteLine("Game Over!");
-}
+  beverage = new Decaf();
+  Console.WriteLine(beverage);
 
-RunLoop();
+

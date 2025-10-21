@@ -1,0 +1,24 @@
+@startuml Hotmug-Cafe
+
+abstract class Beverage {
+  description : String
+  {abstract} Cost() : float 
+  {abstract} GetDescription() : String
+  Total() 
+}
+
+class Regular extends Beverage {
+  GetDescription() : String
+  Cost(): float 
+}
+
+class Espresso extends Beverage {
+  GetDescription() : String
+  Cost(): float 
+}
+
+class Decaf extends Beverage {
+  GetDescription() : String
+  Cost(): float 
+}
+@enduml

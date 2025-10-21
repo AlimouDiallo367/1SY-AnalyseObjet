@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/ShawiQuest.csproj",
-      "projectName": "ShawiQuest",
-      "projectPath": "/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/ShawiQuest.csproj",
+      "projectUniqueName": "/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/Program.csproj",
+      "projectName": "Program",
+      "projectPath": "/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/Program.csproj",
       "packagesPath": "/home/thalimoud/.nuget/packages/",
-      "outputPath": "/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/obj/",
+      "outputPath": "/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/thalimoud/.nuget/NuGet/NuGet.Config"
