@@ -1,0 +1,15 @@
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/bin/Debug/net9.0/Program
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/bin/Debug/net9.0/Program.deps.json
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/bin/Debug/net9.0/Program.runtimeconfig.json
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/bin/Debug/net9.0/Program.dll
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/bin/Debug/net9.0/Program.pdb
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/Program.GeneratedMSBuildEditorConfig.editorconfig
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/Program.AssemblyInfoInputs.cache
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/Program.AssemblyInfo.cs
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/Program.csproj.CoreCompileInputs.cache
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/Program.sourcelink.json
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/Program.dll
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/refint/Program.dll
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/Program.pdb
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/Program.genruntimeconfig.cache
+/home/thalimoud/GitRepos/1SY-AnalyseObjet/DesignPatterns/HotMug-Cafe/src/obj/Debug/net9.0/ref/Program.dll
