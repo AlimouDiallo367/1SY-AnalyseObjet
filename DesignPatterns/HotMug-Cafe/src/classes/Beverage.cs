@@ -2,8 +2,8 @@ public abstract class Beverage
 {
   private string? _description; 
   private float gst = 0.05f;
-  private float qst = 0.0975f; 
-  public float extraPrices { get; set;}
+  private float qst = 0.09975f; 
+ 
 
   public Beverage()
   {
@@ -14,11 +14,11 @@ public abstract class Beverage
   public abstract string GetDescription();
   public float Total() 
   {
-    return (gst + qst) * (Cost()+extraPrices) + Cost() + extraPrices;
+    return gst * Cost() + qst * Cost() + Cost();
   }
 
   public override string ToString()
   {
-    return $"Café {GetDescription()} vendu: {Total():C}"; 
+    return $"Café {GetDescription()} vendu: {Total():C2}"; 
   }
 }

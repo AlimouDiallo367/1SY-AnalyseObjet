@@ -1,8 +1,16 @@
-﻿Beverage beverage = new Regular(1, 1, 0);
+﻿Beverage beverage = new Regular();
+beverage = new StreamedMilk(beverage);
+beverage = new Chocolate(beverage);
+
 Console.WriteLine(beverage);
 
-beverage = new Expresso(1, 0, 1);
+beverage = new Expresso();
+beverage = new WippedCream(beverage);
+beverage = new Chocolate(beverage);
+beverage = new Chocolate(beverage);
+beverage = new Chocolate(beverage);
+
 Console.WriteLine(beverage);
 
-beverage = new Decaf(0, 0, 0);
+beverage = new Decaf();
 Console.WriteLine(beverage);
